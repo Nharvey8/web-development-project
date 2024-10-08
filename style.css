@@ -55,6 +55,12 @@ main {
     margin: 0 auto;
 }
 
+.contact-page {
+    text-align: left; /* Aligns text to the left */
+    margin: 0 auto;
+    padding: 20px;
+}
+
 form input, form textarea {
     width: 30%;
     padding: 6px;
