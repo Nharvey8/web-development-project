@@ -36,11 +36,7 @@ main {
     display: flex;
 }
 
-.profile-img {
-    width: 450px; 
-    height: 250px; 
-    margin-right: 20px;
-}
+
 
 .bio-text {
     max-width: 600px;
