@@ -2,14 +2,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Default font for all pages */
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;  /* Dark background similar to ChatGPT */
+    color: #eaeaea;  /* Light gray text for readability */
     line-height: 1.6;
 }
 
 nav {
-    background-color: #333;
+    background-color: #3a3a3a;  /* Dark gray navigation bar */
     color: white;
     padding: 10px;
     text-align: center;
@@ -22,11 +22,11 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #10a37f;  /* ChatGPT-like green for links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -35,12 +35,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Page-specific styles */
-h1 {
+/* Headings */
+h1, h2, h3 {
+    color: #eaeaea;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
+/* Container for consistent width */
 .container {
     width: 80%;
     margin: auto;
@@ -52,12 +54,14 @@ h1 {
     font-size: 2.5em;
     text-align: center;
     padding: 50px 0;
+    color: #10a37f;  
 }
 
 .home-welcome {
     font-size: 1.2em;
     text-align: center;
     margin-top: 20px;
+    color: #b5b5b5;  /* Light gray for sub-text */
 }
 
 /* About Page */
@@ -69,36 +73,42 @@ h1 {
 }
 
 .about-image {
-    width: 30%; /* Adjusted for a better fit */
-    max-width: 6.14in; /* Approximate width of a dollar bill */
-    height: auto; /* Maintains the aspect ratio */
+    width: 30%;
+    max-width: 6.14in; /* Approximate size of a dollar bill */
+    height: auto;
     margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid #10a37f;  /* Green border to match the theme */
 }
 
 .about-bio {
     width: 60%;
+    color: #eaeaea;
+    line-height: 1.8;
 }
-
 
 /* Contact Page */
 .contact-form {
     margin-top: 50px;
     padding: 20px;
-    background: #eaeaea;
+    background-color: #2c2c2c;  /* Dark background for form area */
     border-radius: 5px;
+    color: #eaeaea;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    background: #3a3a3a;
+    border: 1px solid #5a5a5a;
     border-radius: 5px;
+    color: #eaeaea;
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background: #333;
+    background: #10a37f;  /* ChatGPT green button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -106,5 +116,14 @@ h1 {
 }
 
 .contact-form button:hover {
-    background: #555;
+    background: #13b78e;  /* Slight hover effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: #b5b5b5;
+    margin-top: 30px;
 }
