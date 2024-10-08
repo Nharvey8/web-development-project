@@ -35,20 +35,35 @@ main {
     text-align: center; /* Centers everything inside the main section */
 }
 
-/* Photo Collage Section */
-.photo-collage {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-    grid-gap: 10px; /* Adds space between images */
-    margin: 20px 0;
-}
-
-.photo-collage img {
-    width: 100%; /* Ensures the images fit inside the grid cells */
+/* Banner Section */
+.banner img {
+    width: 100%;
     height: auto;
-    border-radius: 10px; /* Adds rounded corners to images */
+    max-width: 800px; /* Controls the maximum width for the banner */
+    margin-bottom: 20px;
 }
 
+/* Updated Photo Grid Section */
+.photo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-row img {
+    width: 3in; /* 3 inches wide */
+    height: 3in; /* 3 inches tall */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* About Section */
 .about-section {
     display: flex;
     justify-content: center; /* Centers the about-section content horizontally */
@@ -69,6 +84,7 @@ main {
     margin: 0 auto;
 }
 
+/* Contact Page */
 .contact-page {
     text-align: left; /* Aligns text to the left */
     margin: 0 auto;
