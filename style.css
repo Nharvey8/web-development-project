@@ -66,26 +66,27 @@ h1, h2, h3 {
 
 /* About Page */
 .about-section {
-    display: flex;
-    align-items: flex-start;  /* Align text and image to the top */
-    justify-content: flex-start;  /* Start content from the left */
+    display: block;  /* Ensure the content flows vertically */
     padding: 50px 0;
+    text-align: left;
 }
 
 .about-image {
-    width: 15%;  /* Reduce image width */
-    max-width: 3in;  /* Make the image smaller */
+    width: 10%;  /* Make the image smaller */
+    max-width: 2in;  /* Even smaller image */
     height: auto;  /* Maintain aspect ratio */
-    margin-right: 20px;  /* Space between image and text */
+    margin-bottom: 20px;  /* Add space below the image */
+    float: left;  /* Float image to the top-left of the page */
     border-radius: 5px;
-    border: 2px solid #10a37f;  /* Green border to match the theme */
+    border: 2px solid #10a37f;  /* Green border for a modern look */
 }
 
 .about-bio {
-    width: 80%;  /* Allow the text to take up more space */
+    clear: both;  /* Ensures paragraphs are placed beneath the image */
     color: #eaeaea;
     line-height: 1.8;
 }
+
 
 
 /* Contact Page */
