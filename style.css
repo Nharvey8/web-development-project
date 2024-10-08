@@ -37,7 +37,8 @@ main {
 }
 
 .profile-img {
-    max-width: 150000px;
+    width: 150px; 
+    height: 65px; 
     margin-right: 20px;
 }
 
