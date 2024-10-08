@@ -69,13 +69,16 @@ h1 {
 }
 
 .about-image {
-    width: 30%;
+    width: 30%; /* Adjusted for a better fit */
+    max-width: 6.14in; /* Approximate width of a dollar bill */
+    height: auto; /* Maintains the aspect ratio */
     margin-right: 20px;
 }
 
 .about-bio {
     width: 60%;
 }
+
 
 /* Contact Page */
 .contact-form {
