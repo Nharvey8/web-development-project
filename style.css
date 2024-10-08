@@ -67,25 +67,26 @@ h1, h2, h3 {
 /* About Page */
 .about-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;  /* Align text and image to the top */
+    justify-content: flex-start;  /* Start content from the left */
     padding: 50px 0;
 }
 
 .about-image {
-    width: 30%;
-    max-width: 6.14in; /* Approximate size of a dollar bill */
-    height: auto;
-    margin-right: 20px;
+    width: 15%;  /* Reduce image width */
+    max-width: 3in;  /* Make the image smaller */
+    height: auto;  /* Maintain aspect ratio */
+    margin-right: 20px;  /* Space between image and text */
     border-radius: 5px;
     border: 2px solid #10a37f;  /* Green border to match the theme */
 }
 
 .about-bio {
-    width: 60%;
+    width: 80%;  /* Allow the text to take up more space */
     color: #eaeaea;
     line-height: 1.8;
 }
+
 
 /* Contact Page */
 .contact-form {
