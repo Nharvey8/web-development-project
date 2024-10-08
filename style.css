@@ -35,6 +35,20 @@ main {
     text-align: center; /* Centers everything inside the main section */
 }
 
+/* Photo Collage Section */
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-gap: 10px; /* Adds space between images */
+    margin: 20px 0;
+}
+
+.photo-collage img {
+    width: 100%; /* Ensures the images fit inside the grid cells */
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to images */
+}
+
 .about-section {
     display: flex;
     justify-content: center; /* Centers the about-section content horizontally */
@@ -66,6 +80,7 @@ form input, form textarea {
     padding: 6px;
     margin-bottom: 10px;
 }
+
 button {
     padding: 10px 20px;
     background-color: #333;
