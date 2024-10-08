@@ -1,80 +1,107 @@
-/* Apply Times New Roman to all pages */
+/* General Styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif; /* Default font for all pages */
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Navigation Menu Styles */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav {
     background-color: #333;
-    overflow: hidden;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-/* Main content styles */
-main {
-    padding: 20px;
-}
-
-h1 {
-    font-size: 24px;
     font-weight: bold;
 }
 
-p {
-    font-size: 18px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Form Styles (Contact Page) */
-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 400px;
+/* Page-specific styles */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    width: 80%;
     margin: auto;
+    overflow: hidden;
 }
 
-form label {
-    display: block;
-    margin-bottom: 8px;
+/* Home Page */
+.home-header {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 50px 0;
 }
 
-form input, form textarea {
+.home-welcome {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* About Page */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.about-image {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.about-bio {
+    width: 60%;
+}
+
+/* Contact Page */
+.contact-form {
+    margin-top: 50px;
+    padding: 20px;
+    background: #eaeaea;
+    border-radius: 5px;
+}
+
+.contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-form button {
-    padding: 10px 15px;
-    background-color: #333;
+.contact-form button {
+    padding: 10px 20px;
+    background: #333;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-form button:hover {
-    background-color: #575757;
+.contact-form button:hover {
+    background: #555;
 }
