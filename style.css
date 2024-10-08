@@ -3,7 +3,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centers all text and elements globally */
+    text-align: center; /* Centers all text and elements */
 }
 
 header {
@@ -32,18 +32,18 @@ nav ul li a {
 
 main {
     padding: 20px;
-    text-align: center; /* Centers everything inside the main section */
+    text-align: center; 
 }
 
 /* Banner Section */
 .banner img {
     width: 100%;
     height: auto;
-    max-width: 600px; /* Adjusted to make the banner image smaller */
+    max-width: 600px;
     margin-bottom: 20px;
 }
 
-/* Updated Photo Grid Section */
+/*photo sections */
 .photo-grid {
     display: flex;
     flex-direction: column;
@@ -57,8 +57,8 @@ main {
 }
 
 .photo-row img {
-    width: 2in; /* Adjusted to 2 inches wide */
-    height: 2in; /* Adjusted to 2 inches tall */
+    width: 2in; /* didnt end up working out this way I think */
+    height: 2in; 
     object-fit: cover;
     border-radius: 8px;
 }
@@ -80,13 +80,13 @@ main {
 
 .bio-text {
     max-width: 600px;
-    text-align: center; /* Centers the paragraphs in the About page */
+    text-align: center; /* Centers the paragraphs in the About page even tho they are globally just in case*/
     margin: 0 auto;
 }
 
 /* Contact Page */
 .contact-page {
-    text-align: left; /* Aligns text to the left */
+    text-align: left; /* Aligns text to the left only applies to contact*/
     margin: 0 auto;
     padding: 20px;
 }
@@ -104,7 +104,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 100%; /* Expands the input fields to full width */
+    width: 100%; 
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
