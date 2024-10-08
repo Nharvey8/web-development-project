@@ -3,19 +3,21 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    text-align: center; /* Centers all text and elements globally */
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    text-align: center;
+    text-align: center; /* Centers header content */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center; /* Centers navigation links */
 }
 
 nav ul li {
@@ -30,16 +32,27 @@ nav ul li a {
 
 main {
     padding: 20px;
+    text-align: center; /* Centers everything inside the main section */
 }
 
 .about-section {
     display: flex;
+    justify-content: center; /* Centers the about-section content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: left; /* Resets text alignment to left for non-paragraph content */
+    margin: 0 auto;
 }
 
-
+.profile-img {
+    width: 1056px;
+    height: 816px;
+    margin-right: 20px;
+}
 
 .bio-text {
     max-width: 600px;
+    text-align: center; /* Centers the paragraphs in the About page */
+    margin: 0 auto;
 }
 
 form input, form textarea {
