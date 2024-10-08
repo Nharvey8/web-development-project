@@ -39,7 +39,7 @@ main {
 .banner img {
     width: 100%;
     height: auto;
-    max-width: 800px; /* Controls the maximum width for the banner */
+    max-width: 600px; /* Adjusted to make the banner image smaller */
     margin-bottom: 20px;
 }
 
@@ -57,8 +57,8 @@ main {
 }
 
 .photo-row img {
-    width: 3in; /* 3 inches wide */
-    height: 3in; /* 3 inches tall */
+    width: 2in; /* Adjusted to 2 inches wide */
+    height: 2in; /* Adjusted to 2 inches tall */
     object-fit: cover;
     border-radius: 8px;
 }
