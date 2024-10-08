@@ -1,21 +1,18 @@
+/* Apply Times New Roman to all pages */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
+/* Navigation Menu Styles */
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
 }
 
 nav ul li {
@@ -26,39 +23,58 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
 }
 
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main content styles */
 main {
     padding: 20px;
 }
 
-.about-section {
-    display: flex;
+h1 {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.profile-img {
-    max-width: 150px;
-    margin-right: 20px;
+p {
+    font-size: 18px;
 }
 
-.bio-text {
-    max-width: 600px;
+/* Form Styles (Contact Page) */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-button {
-    padding: 10px 20px;
+form button {
+    padding: 10px 15px;
     background-color: #333;
     color: white;
     border: none;
-    cursor: pointer;
+    border-radius: 4px;
 }
 
-button:hover {
-    background-color: #555;
+form button:hover {
+    background-color: #575757;
 }
