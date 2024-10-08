@@ -1,131 +1,64 @@
-/* General Styles */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e1e;  /* Dark background similar to ChatGPT */
-    color: #eaeaea;  /* Light gray text for readability */
-    line-height: 1.6;
 }
 
-nav {
-    background-color: #3a3a3a;  /* Dark gray navigation bar */
+header {
+    background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 10px;
 }
 
 nav ul li a {
-    color: #10a37f;  /* ChatGPT-like green for links */
+    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #eaeaea;
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* Container for consistent width */
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Home Page */
-.home-header {
-    font-size: 2.5em;
-    text-align: center;
-    padding: 50px 0;
-    color: #10a37f;  
-}
-
-.home-welcome {
-    font-size: 1.2em;
-    text-align: center;
-    margin-top: 20px;
-    color: #b5b5b5;  /* Light gray for sub-text */
-}
-
-/* About Page */
-.about-section {
-    display: block;  /* Ensure the content flows vertically */
-    padding: 50px 0;
-    text-align: left;
-}
-
-.about-image {
-    width: 1%;  /* Make the image smaller */
-    max-width: 2in;  /* Even smaller image */
-    height: auto;  /* Maintain aspect ratio */
-    margin-bottom: 20px;  /* Add space below the image */
-    float: left;  /* Float image to the top-left of the page */
-    border-radius: 5px;
-    border: 2px solid #10a37f;  /* Green border for a modern look */
-}
-
-.about-bio {
-    clear: both;  /* Ensures paragraphs are placed beneath the image */
-    color: #eaeaea;
-    line-height: 1.8;
-}
-
-
-
-/* Contact Page */
-.contact-form {
-    margin-top: 50px;
+main {
     padding: 20px;
-    background-color: #2c2c2c;  /* Dark background for form area */
-    border-radius: 5px;
-    color: #eaeaea;
 }
 
-.contact-form input, .contact-form textarea {
+.about-section {
+    display: flex;
+}
+
+.profile-img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.bio-text {
+    max-width: 600px;
+}
+
+form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    background: #3a3a3a;
-    border: 1px solid #5a5a5a;
-    border-radius: 5px;
-    color: #eaeaea;
+    margin-bottom: 10px;
 }
 
-.contact-form button {
+button {
     padding: 10px 20px;
-    background: #10a37f;  /* ChatGPT green button */
+    background-color: #333;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background: #13b78e;  /* Slight hover effect */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #3a3a3a;
-    color: #b5b5b5;
-    margin-top: 30px;
+button:hover {
+    background-color: #555;
 }
