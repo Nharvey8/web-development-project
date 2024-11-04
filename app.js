@@ -1,19 +1,31 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
-app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+// Middleware to parse form data
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/contact.html'); // send HTML file on GET request
-});
+// Serve static files (like your HTML and CSS)
+app.use(express.static(path.join(__dirname, 'public')));
 
+// Route to handle form submission
 app.post('/submit-form', (req, res) => {
-    const username = req.body.username; // access form data
-    // Add validation logic here
-    res.send(`Thank you`);
+    const { name, email, message } = req.body;
+    console.log('Form submission received:', { name, email, message });
+
+    // Redirect to a 'completed' page
+    res.redirect('/completed.html');
 });
 
-app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+// Serve the 'completed.html' page
+app.get('/completed.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'completed.html'));
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
