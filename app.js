@@ -15,5 +15,5 @@ app.post('/submit-form', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running on http://nharvey8.github.io:${port}`);
+    console.log(`Server running on https://nharvey8.github.io/web-development-project/:${port}`);
 });
