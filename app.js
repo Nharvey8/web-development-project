@@ -11,6 +11,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files (like your HTML and CSS)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve the homepage at the root URL
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Route to handle form submission
 app.post('/submit-form', (req, res) => {
     const { name, email, message } = req.body;
@@ -28,8 +33,4 @@ app.get('/completed.html', (req, res) => {
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
-});
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
