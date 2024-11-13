@@ -3,21 +3,21 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centers all text and elements */
+    text-align: center;
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    text-align: center; /* Centers header content */
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center; /* Centers navigation links */
+    text-align: center;
 }
 
 nav ul li {
@@ -32,10 +32,9 @@ nav ul li a {
 
 main {
     padding: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
-/* Banner Section */
 .banner img {
     width: 100%;
     height: auto;
@@ -43,7 +42,6 @@ main {
     margin-bottom: 20px;
 }
 
-/*photo sections */
 .photo-grid {
     display: flex;
     flex-direction: column;
@@ -57,18 +55,26 @@ main {
 }
 
 .photo-row img {
-    width: 2in; /* didnt end up working out this way I think */
+    width: 2in;
     height: 2in; 
     object-fit: cover;
     border-radius: 8px;
 }
 
-/* About Section */
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
 .about-section {
     display: flex;
-    justify-content: center; /* Centers the about-section content horizontally */
-    align-items: center; /* Centers the content vertically */
-    text-align: left; /* Resets text alignment to left for non-paragraph content */
+    justify-content: center;
+    align-items: center;
+    text-align: left;
     margin: 0 auto;
 }
 
@@ -80,13 +86,12 @@ main {
 
 .bio-text {
     max-width: 600px;
-    text-align: center; /* Centers the paragraphs in the About page even tho they are globally just in case*/
+    text-align: center;
     margin: 0 auto;
 }
 
-/* Contact Page */
 .contact-page {
-    text-align: left; /* Aligns text to the left only applies to contact*/
+    text-align: left;
     margin: 0 auto;
     padding: 20px;
 }
