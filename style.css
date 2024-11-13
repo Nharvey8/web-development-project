@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #2986cc;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -124,7 +124,7 @@ form textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #2986cc;
     color: white;
     border: none;
     cursor: pointer;
