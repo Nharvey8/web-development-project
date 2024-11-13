@@ -6,44 +6,47 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function validateForm(event) {
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    function validateForm(event) {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            if (name === "") {
-                alert("Name is required");
-                event.preventDefault();
-                return false;
-            }
-
-            if (!emailRegex.test(email)) {
-                alert("Please enter a valid email address");
-                event.preventDefault();
-                return false;
-            }
-
-            if (message === "") {
-                alert("Message is required");
-                event.preventDefault();
-                return false;
-            }
-
-            return true;
+        if (name === "") {
+            alert("Name is required");
+            event.preventDefault();
+            return false;
         }
 
-        window.onload = function() {
-            const form = document.getElementById('submit-form');
-            form.addEventListener('submit', function(event) {
-                if (validateForm(event)) {
-                    window.location.href = "completed.html";
-                } else {
-                    event.preventDefault();
-                }
-            });
-        };
-    </script>
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address");
+            event.preventDefault();
+            return false;
+        }
+
+        if (message === "") {
+            alert("Message is required");
+            event.preventDefault();
+            return false;
+        }
+
+
+        window.location.href = "completed.html";
+        event.preventDefault();
+        return false; 
+    }
+
+    window.onload = function() {
+        const form = document.getElementById('submit-form');
+        form.addEventListener('submit', function(event) {
+            if (validateForm(event)) {
+            } else {
+                event.preventDefault();
+            }
+        });
+    };
+</script>
+
 </head>
 <body class="contact-page">
     <header>
