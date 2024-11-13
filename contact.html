@@ -37,9 +37,7 @@
             const form = document.getElementById('submit-form');
             form.addEventListener('submit', function(event) {
                 if (validateForm(event)) {
-                    setTimeout(function() {
-                        window.location.href = "/completed.html";
-                    }, 500);
+                    window.location.href = "completed.html";
                 } else {
                     event.preventDefault();
                 }
