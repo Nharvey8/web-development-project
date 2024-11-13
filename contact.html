@@ -6,38 +6,37 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Form validation function
+
         function validateForm(event) {
-            // Get form field values
+
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const message = document.getElementById('message').value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            // Validation logic
+
             if (name === "") {
                 alert("Name is required");
-                event.preventDefault(); // Prevent form submission
+                event.preventDefault(); 
                 return false;
             }
 
             if (!emailRegex.test(email)) {
                 alert("Please enter a valid email address");
-                event.preventDefault(); // Prevent form submission
+                event.preventDefault();
                 return false;
             }
 
             if (message === "") {
                 alert("Message is required");
-                event.preventDefault(); // Prevent form submission
+                event.preventDefault(); 
                 return false;
             }
 
-            // If all validation passes, allow form submission
+             window.location.href = "completed.html";
             return true;
         }
 
-        // Attach event listener on window load
         window.onload = function() {
             document.getElementById('submit-form').addEventListener('submit', validateForm);
         };
@@ -57,7 +56,7 @@
     <main>
         <section>
             <h2>Contact Form</h2>
-            <!-- Contact Form -->
+        
                 <form id="submit-form" action="/submit-form" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
